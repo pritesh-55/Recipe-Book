@@ -1,0 +1,65 @@
+/* AddRecipe.css */
+
+.add-recipe-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-recipe-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.add-recipe-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-recipe-container input,
+.add-recipe-container textarea {
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.add-recipe-container textarea {
+  min-height: 120px;
+}
+
+.add-recipe-container button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-recipe-container button:hover {
+  background-color: #0056b3;
+}
+
+.add-recipe-container button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
