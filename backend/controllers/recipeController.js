@@ -1,4 +1,4 @@
-const ApiError = require("../utils/ApiError");
+const ApiError = require("../utils/apiError");
 const Recipe = require('../models/Recipe');
 
 exports.createRecipe = async (req, res, next) => {

@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-const ApiError = require("../utils/ApiError");
+const ApiError = require("../utils/apiError");
 
 exports.registerUser = async (req, res, next) => {
   const { username, email, password } = req.body;
