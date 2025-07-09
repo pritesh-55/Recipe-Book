@@ -55,6 +55,7 @@ cd Recipe-Book
 ```
 2. **Backend Setup (Node.js + MongoDB) Install dependencies**
 ```bash
+cd backend
 npm install
 
 ```
