@@ -23,7 +23,7 @@ export default function Login() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', formData);
+      const res = await axios.post('https://recipe-book-backend-efrw.onrender.com/api/users/login', formData);
       const { token, user } = res.data;
 
       login(token, user);

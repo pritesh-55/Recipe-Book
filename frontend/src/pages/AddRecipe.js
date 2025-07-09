@@ -37,7 +37,7 @@ export default function AddRecipe() {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/recipes', payload, {
+      await axios.post('https://recipe-book-backend-efrw.onrender.com/api/recipes', payload, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

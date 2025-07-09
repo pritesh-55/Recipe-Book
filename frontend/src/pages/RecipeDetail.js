@@ -12,7 +12,7 @@ export default function RecipeDetail() {
   const fetchRecipe = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/recipes/${id}`);
+      const res = await axios.get(`https://recipe-book-backend-efrw.onrender.com/api/recipes/${id}`);
       setRecipe(res.data.recipe);
     } catch (err) {
       setError('Failed to load recipe.');

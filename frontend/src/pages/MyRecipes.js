@@ -18,7 +18,7 @@ export default function MyRecipes() {
     setLoading(true);
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/recipes/user/my-recipes?page=${pageNum}`,
+        `https://recipe-book-backend-efrw.onrender.com/api/recipes/user/my-recipes?page=${pageNum}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export default function MyRecipes() {
     if (!window.confirm('Are you sure you want to delete this recipe?')) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/recipes/${recipeId}`, {
+      await axios.delete(`https://recipe-book-backend-efrw.onrender.com/api/recipes/${recipeId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

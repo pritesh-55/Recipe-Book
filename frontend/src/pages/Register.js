@@ -24,7 +24,7 @@ export default function Register() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', formData);
+      const res = await axios.post('https://recipe-book-backend-efrw.onrender.com/api/users/register', formData);
       const { token, newUser } = res.data;
 
       login(token, newUser);

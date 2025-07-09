@@ -23,7 +23,7 @@ export default function EditRecipe() {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/recipes/${id}`);
+        const res = await axios.get(`https://recipe-book-backend-efrw.onrender.com/api/recipes/${id}`);
         const recipe = res.data.recipe;
         setFormData({
           title: recipe.title || '',
@@ -59,7 +59,7 @@ export default function EditRecipe() {
     };
 
     try {
-      await axios.put(`http://localhost:5000/api/recipes/${id}`, payload, {
+      await axios.put(`https://recipe-book-backend-efrw.onrender.com/api/recipes/${id}`, payload, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -26,7 +26,7 @@ export default function Home() {
       if (ingredients) params.append('ingredients', ingredients);
       if (cookingTime) params.append('cookingTime', cookingTime);
 
-      const res = await axios.get(`http://localhost:5000/api/recipes?${params.toString()}`);
+      const res = await axios.get(`https://recipe-book-backend-efrw.onrender.com/api/recipes?${params.toString()}`);
       const data = res.data.recipes;
 
       setRecipes(data.docs);
